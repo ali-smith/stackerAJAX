@@ -5,8 +5,8 @@
 	<title>Stack Overflow AJAX Demo</title>
 	<link rel="stylesheet" href="main.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<!--<script src="app.js"></script>-->
-	<script src="inspgetter.js"></script>
+	<script src="app.js"></script>
+	
 </head>
 <body>
 	<div class="container">
@@ -39,14 +39,15 @@
 	</div>
 	<div class="templates hidden">
 		<dl class="result question">
-			<dt>User</dt>
-				<dd class="user-profile"><a href="" target="_blank"></a></dd>
-			<dt>Reputation</dt>
-				<dd class="user-reputation"></dd>
-			<dt>Acceptance Rate</dt>
-				<dd class="acceptance-rate"></dd>
-			<dt>Score</dt>
-				<dd class="score"></dd>
+			<dl class="result question">
+			<dt>Question</dt>
+				<dd class="question-text"><a href="" target="_blank"></a></dd>
+			<dt>Asked</dt>
+				<dd class="asked-date"></dd>
+			<dt>Viewed</dt>
+				<dd class="viewed"></dd>
+			<dt>Asker</dt>
+				<dd class="asker"></dd>
 		</dl>
 
 		<dl class="result user">
