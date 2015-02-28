@@ -31,6 +31,7 @@ var showAnswerer = function(user) {
 
 	// set score property in result
 	var score = result.find('.score');
+	score.text(user.score);
 
 	return result;
 	
@@ -74,8 +75,8 @@ var getAnswerer = function(answererTags) {
 		$('.search-results').html(searchResults);
 
 		$.each(result.items, function(i, item) {
-			var answerer = showAnswerer(item);
-			$('.results').append(answerer);
+			var user = showAnswerer(item);
+			$('.results').append(user);
 		});
 	})
 	.fail(function(jqXHR, error, errorThrown){
