@@ -23,9 +23,7 @@ $(document).ready( function() {
 		$('.results').html('');
 		// get the value of the tag the user submitted
 		var answererTag = $(this).find("input[name='answererTag']").val();
-		 (answererTag);
-		 console.log($("input[name='answererTag']").val());
-    getAnswerer(answererTag);
+    	getAnswerer(answererTag);
 	});
 });
 
