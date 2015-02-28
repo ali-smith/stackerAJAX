@@ -13,7 +13,7 @@ $(document).ready( function() {
 	});
 });
 
-// (TA) this function takes the user object returned by StackOverflow 
+// this function takes the user object returned by StackOverflow 
 // and creates new result to be appended to DOM
 var showAnswerer = function(object) {
 
@@ -44,13 +44,13 @@ var showAnswerer = function(object) {
 
 
 
-// (TA) This function takes the search term you input, and the length of the results and adds it below the search box. 
+// This function takes the search term you input, and the length of the results and adds it below the search box. 
 var showSearchResults = function(query, resultNum) {
 	var results = resultNum + ' results for <strong>' + query;//so query here would be replaced with answerTags and resultNum replaced with result.items.length. and the names here dont matter, as long as they match. works the same. 
 	return results;
 };
 
-// (UQTA) takes error string and turns it into displayable DOM element
+// takes error string and turns it into displayable DOM element
 var showError = function(error){
 	var errorElem = $('.templates .error').clone();
 	var errorText = '<p>' + error + '</p>';
