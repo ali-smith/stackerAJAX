@@ -5,7 +5,7 @@
 	<title>Stack Overflow AJAX Demo</title>
 	<link rel="stylesheet" href="main.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="inspgetter.js"></script>
+	<script src="app.js"></script>
 	
 </head>
 <body>
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 	<div class="templates hidden">
-		<dl class="result question">
+		
 			<dl class="result question">
 			<dt>Question</dt>
 				<dd class="question-text"><a href="" target="_blank"></a></dd>
@@ -52,17 +52,19 @@
 
 		<dl class="result user">
 			<dt>User Profile</dt>
-				<dd class="display_name"></dd>	
+				<dd class="user-profile"><a href="" target="_blank"></a></dd>	
 			<dt>Reputation</dt>
-				<dd class="reputation"></dd>
-			<dt>User Type</dt>
-				<dd class="user_type"></dd>
-			<dt>Accept Rate</dt>
-				<dd class="accept_rate"></dd>
+				<dd class="user-reputation"></dd>
+			<dt>Acceptance Rate</dt>
+				<dd class="acceptance-rate"></dd>
+			<dt>Score</dt>
+				<dd class="score"></dd>
 		</dl>
+    
 		<div class="error">
 			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
 		</div>
 	</div>
 </body>
 </html>
+

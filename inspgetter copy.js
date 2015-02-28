@@ -15,7 +15,7 @@ $(document).ready( function() {
 
 // (TA) this function takes the user object returned by StackOverflow 
 // and creates new result to be appended to DOM
-var showAnswerer = function(object) {
+var showAnswerer = function(object) {//yes
 
 	// clone our result template code
 	var result = $('.templates .user').clone();
@@ -94,6 +94,9 @@ var getAnswerer = function(answererTags) {
 		$('.search-results').append(errorElem);
 	});
 };
+
+
+
 
 
 
